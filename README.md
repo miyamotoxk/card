@@ -1,3 +1,3 @@
 # Card
-Card design work
+Card design work.
 It need to be carry on live server.
