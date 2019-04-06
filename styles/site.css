@@ -1,0 +1,207 @@
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
+
+header {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue; }
+
+a {
+  text-decoration: none; }
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .cards > div {
+    margin: 10px 0;
+    box-shadow: 8px 8px 5px grey;
+    border-radius: 10px; }
+
+.card--florence {
+  background-image: url(/images/bg-2.png);
+  background-size: 100% 100%;
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  flex-flow: column; }
+  .card--florence__overlay {
+    color: #ffffff1f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 300px;
+    overflow: hidden; }
+    .card--florence__overlay p {
+      position: absolute;
+      bottom: -50px;
+      left: -100px; }
+  .card--florence__country {
+    display: flex;
+    justify-content: flex-end; }
+    .card--florence__country p {
+      background-color: white;
+      padding: 5px 18px;
+      margin: 50px 45px;
+      border-radius: 5px;
+      font-size: 0.8em;
+      z-index: 1; }
+  .card--florence__content {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    justify-content: space-between; }
+    .card--florence__content__text {
+      margin: 50px 1%;
+      border-left: 5px solid #4db924f7;
+      padding-left: 35px;
+      z-index: 1; }
+      .card--florence__content__text__date {
+        color: #4db924f7; }
+        .card--florence__content__text__date p {
+          margin: 0 0 10px 0; }
+      .card--florence__content__text__location {
+        color: white;
+        font-size: 2em; }
+        .card--florence__content__text__location p {
+          margin: 10px 0 0 0; }
+    .card--florence__content__view {
+      margin: auto 35px 45px;
+      background-color: #4281e2;
+      padding: 10px 30px;
+      border-radius: 20px;
+      z-index: 1; }
+      .card--florence__content__view a {
+        color: white; }
+
+.card--venice {
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
+  position: relative; }
+  .card--venice__background {
+    background-image: url(/images/bg-3.png);
+    background-size: 100% 100%;
+    width: 550px;
+    max-width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px; }
+  .card--venice__overlay {
+    background-color: #4211d04f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px; }
+  .card--venice__content {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 30%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    border-radius: 0 10px 10px 0; }
+    .card--venice__content__country {
+      display: flex;
+      flex-flow: row-reverse;
+      padding: 30px 25px 10px; }
+      .card--venice__content__country p {
+        color: white;
+        background-color: red;
+        font-size: 0.8em;
+        padding: 5px 15px;
+        border-radius: 3px; }
+    .card--venice__content__text {
+      flex-grow: 1;
+      display: flex;
+      flex-flow: column;
+      padding-left: 30px; }
+      .card--venice__content__text__date {
+        margin: 10px 0;
+        color: #61da3d; }
+      .card--venice__content__text__article {
+        margin: 10px 25px 0 0;
+        flex-grow: 1;
+        overflow: hidden; }
+        .card--venice__content__text__article h3 {
+          font-size: 1.5em; }
+        .card--venice__content__text__article p {
+          color: #aba7a7;
+          margin: 10px 0; }
+      .card--venice__content__text__view {
+        display: inline-flex;
+        color: #6969ef;
+        margin-bottom: 60px; }
+        .card--venice__content__text__view i {
+          margin-left: 10px; }
+
+.card--burano {
+  width: 350px;
+  height: 400px;
+  max-width: 100%;
+  position: relative; }
+  .card--burano__background {
+    background-image: url(/images/bg-6.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 95%;
+    position: absolute; }
+  .card--burano__content {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column; }
+    .card--burano__content__heart {
+      color: white;
+      font-size: 2em;
+      display: flex;
+      flex-flow: row-reverse;
+      padding: 20px;
+      flex-grow: 1; }
+    .card--burano__content__text {
+      display: flex;
+      flex-flow: row;
+      background-color: white;
+      margin: 0 20px;
+      padding: 20px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px grey; }
+      .card--burano__content__text__descript {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column; }
+        .card--burano__content__text__descript__reviews {
+          display: inline-flex; }
+          .card--burano__content__text__descript__reviews ul {
+            display: inline-flex;
+            margin-right: 10px;
+            color: gold; }
+          .card--burano__content__text__descript__reviews p {
+            color: #afabab;
+            font-size: 0.8em; }
+        .card--burano__content__text__descript__name {
+          margin: 10px 0 5px;
+          font-size: 1.5em; }
+        .card--burano__content__text__descript__location {
+          color: #afabab; }
+        .card--burano__content__text__descript__price {
+          font-size: 1.2em;
+          margin: 15px 0; }
+      .card--burano__content__text__view {
+        display: flex;
+        flex-flow: column-reverse; }
+        .card--burano__content__text__view i {
+          padding: 10px;
+          background-color: blue;
+          border-radius: 100%;
+          color: white; }
